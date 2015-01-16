@@ -1,4 +1,4 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.ViewModels
 {
     using System;
     using System.ComponentModel;
@@ -10,6 +10,8 @@
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
     using Annotations;
+    using Services;
+    using TaskScheduler = Services.TaskScheduler;
 
     public class MainWindowViewModel : INotifyPropertyChanged
     {

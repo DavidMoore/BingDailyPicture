@@ -1,4 +1,4 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.Models
 {
     class BingImage
     {

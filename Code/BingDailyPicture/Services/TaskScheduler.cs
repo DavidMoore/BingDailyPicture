@@ -1,4 +1,4 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.Services
 {
     using System;
     using System.Diagnostics;

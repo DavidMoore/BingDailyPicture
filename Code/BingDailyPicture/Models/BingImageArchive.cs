@@ -1,4 +1,4 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.Models
 {
     using System.Collections.Generic;
 

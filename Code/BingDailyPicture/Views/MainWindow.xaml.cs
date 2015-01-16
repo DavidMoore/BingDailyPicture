@@ -1,6 +1,7 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.Views
 {
     using System.Windows;
+    using ViewModels;
 
     /// <summary>
     /// Interaction logic for MainWindow.xaml

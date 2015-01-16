@@ -1,10 +1,12 @@
 ﻿<Window
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:BingDailyPicture="clr-namespace:BingDailyPicture" x:Class="BingDailyPicture.MainWindow"
+        xmlns:BingDailyPicture="clr-namespace:BingDailyPicture"
+        xmlns:viewModels="clr-namespace:BingDailyPicture.ViewModels"
+        x:Class="BingDailyPicture.Views.MainWindow"
         Title="Bing Daily Picture" Height="350" Width="525">
     <Window.DataContext>
-        <BingDailyPicture:MainWindowViewModel/>
+        <viewModels:MainWindowViewModel/>
     </Window.DataContext>
     <Grid>
         <TabControl HorizontalAlignment="Stretch" Margin="10" VerticalAlignment="Stretch">

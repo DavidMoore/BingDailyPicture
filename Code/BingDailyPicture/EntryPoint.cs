@@ -4,6 +4,8 @@ namespace BingDailyPicture
     using System.Diagnostics;
     using System.Linq;
     using Properties;
+    using ViewModels;
+    using Views;
 
     static class EntryPoint
     {

@@ -1,4 +1,4 @@
-﻿namespace BingDailyPicture
+﻿namespace BingDailyPicture.Services
 {
     using System;
     using System.Diagnostics;
@@ -11,6 +11,7 @@
     using Windows.Storage;
     using Windows.System.UserProfile;
     using Microsoft.Win32;
+    using Models;
 
     class LockScreenManager
     {
@@ -63,12 +64,12 @@
                             // Set the image as the lock screen
                             await LockScreen.SetImageFileAsync(file);
                             
-                            // Change the wallpaper style to fill.
                             const string desktopKeyName = @"Control Panel\Desktop";
                             using (var key = Registry.CurrentUser.OpenSubKey(desktopKeyName, true))
                             {
                                 if (key != null)
                                 {
+                                    // Change the wallpaper style to fill.
                                     key.SetValue("WallpaperStyle", 10.ToString(), RegistryValueKind.String);
 
                                     // Now we can set the wallpaper, and send a notification that it's been changed.

@@ -1,4 +1,4 @@
-namespace BingDailyPicture
+namespace BingDailyPicture.ViewModels
 {
     using System;
     using System.Windows.Input;

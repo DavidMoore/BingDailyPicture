@@ -39,6 +39,8 @@
             {
                 try
                 {
+                    // TODO: Supported countries / regions / cultures  en-GB,en-US,en-AU,en-NZ,en-CA,de-DE,fr-FR,zh-CN,ja-JP
+                    
                     using (var response = await client.GetAsync("http://www.bing.com/HPImageArchive.aspx?format=js&n=1"))
                     {
                         var model = await response.Content.ReadAsAsync<BingImageArchive>();
